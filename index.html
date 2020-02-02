@@ -46,13 +46,11 @@
 
     <!-- Configure a few settings and attach camera -->
     <script language="JavaScript">
-        Webcam.set({
+        Webcam.set('constraints', {
             width: 320,
             height: 240,
             image_format: 'jpeg',
-            jpeg_quality: 90
-        });
-        Webcam.set('constraints', {
+            jpeg_quality: 90,
             facingMode: 'environment'
         });
         Webcam.attach('#my_camera');
